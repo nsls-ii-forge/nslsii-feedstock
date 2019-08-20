@@ -1,40 +1,43 @@
 {% set name = "nslsii" %}
 {% set org = "NSLS-II" %}
+{% set sha256 = "2e9d8cdecccff3cfc7ac2b6819cdd91bd18226e0d857f71166bc798ab1cb2b89" %}
 {% set version = "0.0.10" %}
 
 package:
-    name: {{ name }}
-    version: {{ version }}
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-    git_url: https://github.com/{{ org }}/{{ name }}
-    git_rev: v{{ version }}
+  url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record=record.txt
-    skip: True  # [py2k]
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -v"
 
 requirements:
-    build:
-        - python
-    run:
-        - bluesky
-        - caproto
-        - databroker
-        - ipython
-        - ipywidgets
-        - matplotlib
-        - numpy
-        - ophyd
-        - psutil
-        - pyolog
-        - python
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - bluesky
+    - caproto
+    - databroker
+    - ipython
+    - ipywidgets
+    - matplotlib
+    - numpy
+    - ophyd
+    - psutil
+    - pyolog
 
 test:
-    imports:
-        - nslsii
-
+  imports:
+    - {{ name }}
 about:
-    home: https://github.com/{{ org }}/{{ name }}
-    license: BSD
+  home: https://github.com/{{ org }}/{{ name }}
+  license: BSD
+  license_file: LICENSE
+  summary: Repository of tools used for both data collection and analysis at NSLS-II.
