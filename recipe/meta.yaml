@@ -1,6 +1,6 @@
 {% set name = "nslsii" %}
 {% set org = "NSLS-II" %}
-{% set sha256 = "9aa3c4881e9b66cb6042369855489e3355a9c10acb7c6bef4897a834c1b47078" %}
+{% set sha256 = "2e9d8cdecccff3cfc7ac2b6819cdd91bd18226e0d857f71166bc798ab1cb2b89" %}
 {% set version = "0.0.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    url: https://github.com/{{ org }}/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
