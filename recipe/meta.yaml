@@ -1,6 +1,6 @@
 {% set name = "nslsii" %}
-{% set version = "0.0.14" %}
-{% set sha256 = "9ca1b96075900147784fc5403d0aaa8b067d17a2d6dbc7d548b622474a05f4bf" %}
+{% set version = "0.0.15" %}
+{% set sha256 = "9c1e58d5127a5aec509ab58ae103ab9376bd795eb48bd838b3d181e0f9657910" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,9 @@ requirements:
     - pip
   run:
     - python
+    - appdirs
     - bluesky
+    - bluesky-kafka
     - caproto
     - databroker
     - ipython
