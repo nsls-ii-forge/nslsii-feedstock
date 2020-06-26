@@ -1,6 +1,6 @@
 {% set name = "nslsii" %}
-{% set version = "0.0.15" %}
-{% set sha256 = "9c1e58d5127a5aec509ab58ae103ab9376bd795eb48bd838b3d181e0f9657910" %}
+{% set version = "0.0.16" %}
+{% set sha256 = "abfe3ddb8a7020cac4f8250855f4425ed3d259e2b43a3332a88c004fefebc074" %}
 
 package:
   name: {{ name|lower }}
@@ -40,6 +40,6 @@ test:
 
 about:
   home: https://github.com/NSLS-II/nslsii
-  license: BSD
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Repository of tools used for both data collection and analysis at NSLS-II.
