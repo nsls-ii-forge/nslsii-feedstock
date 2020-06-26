@@ -40,6 +40,6 @@ test:
 
 about:
   home: https://github.com/NSLS-II/nslsii
-  license: BSD
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Repository of tools used for both data collection and analysis at NSLS-II.
