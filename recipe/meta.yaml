@@ -1,6 +1,6 @@
 {% set name = "nslsii" %}
-{% set version = "0.0.16" %}
-{% set sha256 = "abfe3ddb8a7020cac4f8250855f4425ed3d259e2b43a3332a88c004fefebc074" %}
+{% set version = "0.0.17" %}
+{% set sha256 = "c737eb21c11999f75784ba46d9d037c606b891b35b886914925b2092db9cdf62" %}
 
 package:
   name: {{ name|lower }}
@@ -36,7 +36,7 @@ requirements:
 
 test:
   imports:
-    - {{ name }}
+    - nslsii
 
 about:
   home: https://github.com/NSLS-II/nslsii
