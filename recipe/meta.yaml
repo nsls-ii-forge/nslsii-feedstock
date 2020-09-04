@@ -1,6 +1,6 @@
 {% set name = "nslsii" %}
-{% set version = "0.0.17" %}
-{% set sha256 = "c737eb21c11999f75784ba46d9d037c606b891b35b886914925b2092db9cdf62" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "6cca2625b306af14a8a04459fd14fc4130cffca90297fb5cee31336946a4d74b" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -v"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
