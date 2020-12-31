@@ -5,11 +5,9 @@ Home: https://github.com/NSLS-II/nslsii
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/nslsii-feedstock/blob/master/LICENSE.txt)
 
 Summary: Repository of tools used for both data collection and analysis at NSLS-II.
-
-
 
 Current build status
 ====================
