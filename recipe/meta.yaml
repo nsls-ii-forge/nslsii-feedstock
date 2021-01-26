@@ -1,6 +1,6 @@
 {% set name = "nslsii" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "adc4a3cf4f59bb109e0294141386cf3e5ebed4d6041880c301837079f7544438" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "604179a088954fce71b54d742228363d85526b1f9c027e671bee67f67f18ea8b" %}
 
 package:
   name: {{ name|lower }}
